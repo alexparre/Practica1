@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.grid-item {
+
+  background-color: #ffa07a;
+  padding: 20px;
+  background-color: #ffa07a; 
+            padding: 0; 
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+}
+.grid-item img{
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+}
+@media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media (max-width: 767px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr; 
+            }
+        }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item"><img src="https://ibiza-spotlight1.b-cdn.net/sites/default/files/styles/auto_1500_width/public/beach-images/69732/slideshow-1464007580_6.jpg" style: width="1"></a></div>
+        <div class="grid-item"><img src="https://www.floatyourboatibiza.com/wp-content/uploads/2023/06/Cala-Conta-Ibiza-1200x675.jpg"></div>
+        <div class="grid-item"><img src="https://www.esnautic.com/wp-content/uploads/2022/09/DSC_0896.jpg"></div>
+        <div class="grid-item"><img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/02/ibiza-de-noche.jpg"></div>
+      </div>
+    
+</body>
+</html>
