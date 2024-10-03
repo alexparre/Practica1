@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar {
+            display: flex; /* Flexbox para alinear en fila */
+            justify-content: center; /* Centrar horizontalmente */
+            background-color: #333;
+            height: 40px; /* Mantener altura constante */
+        }
+
+        .nav-list {
+            display: flex; /* Flexbox para mantener los elementos en fila */
+            justify-content: space-around; /* Espaciado uniforme */
+            align-items: center; /* Centrar verticalmente los elementos */
+            list-style: none;
+            width: 100%; /* Ocupa todo el ancho disponible */
+            max-width: 600px; /* Tamaño máximo para pantallas grandes */
+            padding: 0 20px;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-item a:hover {
+            color: #ff9800;
+        }
+
+        /* Para pantallas más pequeñas */
+        @media (max-width: 600px) {
+            .nav-list {
+                justify-content: space-between; /* Ajustar espaciado para pantallas pequeñas */
+                padding: 0 10px;
+                height: 35px;
+            }
+
+            .nav-item a {
+                padding: 10px 10px; /* Ajustar el padding en pantallas pequeñas */
+            }
+        }
+        @media (max-width: 200px) {
+            .nav-list {
+                justify-content: space-between; /* Ajustar espaciado para pantallas pequeñas */
+                padding: 0 10px;
+            }
+
+            .nav-item a {
+                padding: 10px 10px; /* Ajustar el padding en pantallas pequeñas */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Services</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
